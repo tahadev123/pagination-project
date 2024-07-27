@@ -3,7 +3,7 @@ const circles = document.querySelectorAll(".circle");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-let circleActive = localStorage.getItem("circleActive");
+let circleActive = localStorage.getItem("circleActive") || 1;
 
 const nextHandler = () => {
   circleActive++;
